@@ -1,0 +1,40 @@
+:root {
+    --shadow-v1: 0px 0px 3px 1.2px #bdbcbc;
+    --shadow-v2: 0px 0px 1px 0.5px #bdbcbc;
+    --shadow-v3: 0px 0px 2px 0.5px #bdbcbc;
+    --shadow-v4: 0.5px 0.5px 3px 1px #bdbcbc;
+    --shadow-v4-hover: 2px 2px 6px 1px #bdbcbc;
+}
+
+.shadow-v1 {
+    box-shadow: var(--shadow-v1);
+}
+
+.shadow-v2 {
+    box-shadow: var(--shadow-v2);
+}
+
+.shadow-v3 {
+    box-shadow: var(--shadow-v3);
+}
+
+.shadow-v4 {
+    box-shadow: var(--shadow-v4);
+}
+
+.shadow-v5 {
+    box-shadow: var(--shadow-v4);
+}
+
+.shadow-v4:hover {
+    box-shadow: var(--shadow-v4-hover);
+    cursor: pointer;
+}
+
+.rainbow-label-shadow {
+    box-shadow: var(--shadow-v3);
+}
+
+.rainbow-color-select-box-shadow {
+    box-shadow: var(--shadow-v3);
+}

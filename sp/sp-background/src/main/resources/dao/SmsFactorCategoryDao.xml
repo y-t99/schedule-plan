@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.yuanyuan.sp.background.dao.SmsFactorCategoryDao">
+
+    <resultMap id="itemWithFactors" type="cn.yuanyuan.sp.background.dto.FactorCategoryWithFactors"
+               extends="cn.yuanyuan.sp.mbg.mapper.SmsFactorCategoryMapper.BaseResultMap">
+        <collection property="factors" columnPrefix="factor_" resultMap="cn.yuanyuan.sp.mbg.mapper.SmsFactorMapper.BaseResultMap">
+        </collection>
+    </resultMap>
+
+    <select id="selectAllWithFactors" resultMap="itemWithFactors">
+        select parent.id,
+               parent.name,
+               parent.count,
+               factor.id factor_id,
+               factor.factor_category_id factor_factor_category_id,
+               factor.name factor_name,
+               factor.select_type factor_select_type,
+               factor.input_type factor_input_type,
+               factor.input_list factor_input_list,
+               factor.sort factor_sort
+        from sms_factor_category parent
+                 left join sms_factor factor on parent.id = factor.factor_category_id;
+    </select>
+</mapper>

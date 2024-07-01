@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.yuanyuan.sp.service.dao.SmsFactorDao">
+    <resultMap id="factorWithCategory" type="cn.yuanyuan.sp.api.dto.FactorWithCategory"
+               extends="cn.yuanyuan.sp.mbg.mapper.SmsFactorMapper.BaseResultMap">
+        <result column="categoryName" jdbcType="VARCHAR" property="categoryName"/>
+        <result column="factorCategoryId" jdbcType="INTEGER" property="factorCategoryId"/>
+    </resultMap>
+
+    <select id="selectFactorWithCategoryByPK" resultMap="factorWithCategory">
+        select f.id          id,
+               f.name        name,
+               f.select_type select_type,
+               f.input_type  input_type,
+               f.input_list  input_list,
+               f.sort        sort,
+               fc.id         factorCategoryId,
+               fc.name       categoryName
+        from sms_factor f
+                 join sms_factor_category fc
+                      on f.factor_category_id = fc.id
+        where f.id = #{id}
+    </select>
+
+    <select id="selectFactorListWithCategoryByName" resultMap="factorWithCategory">
+        select f.id          id,
+               f.name        name,
+               f.select_type select_type,
+               f.input_type  input_type,
+               f.input_list  input_list,
+               f.sort        sort,
+               fc.id         factorCategoryId,
+               fc.name       categoryName
+        from sms_factor f
+                 join sms_factor_category fc
+                      on f.factor_category_id = fc.id
+        where f.id = #{name}
+    </select>
+
+    <select id="selectAllFactorsWithCategory" resultMap="factorWithCategory">
+        select f.id          id,
+               f.name        name,
+               f.select_type select_type,
+               f.input_type  input_type,
+               f.input_list  input_list,
+               f.sort        sort,
+               fc.id         factorCategoryId,
+               fc.name       categoryName
+        from sms_factor f
+                 join sms_factor_category fc
+                      on f.factor_category_id = fc.id
+    </select>
+
+    <select id="selectFactorListWithCategoryById" resultMap="factorWithCategory">
+        select f.id          id,
+               f.name        name,
+               f.select_type select_type,
+               f.input_type  input_type,
+               f.input_list  input_list,
+               f.sort        sort,
+               fc.id         factorCategoryId,
+               fc.name       categoryName
+        from sms_factor f
+                 join sms_factor_category fc
+                      on f.factor_category_id = fc.id
+        where f.factor_category_id = #{categoryId}
+    </select>
+</mapper>

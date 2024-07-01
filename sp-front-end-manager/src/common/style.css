@@ -1,0 +1,97 @@
+.y-max-wh {
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.y-card-default-style {
+    border-radius: 15px;
+    box-shadow: 0 1px 2px -1px rgb(0 21 41 / 8%);
+    padding: 0px;
+    background-color: white;
+}
+
+.y-card-margin {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.y-card-display {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.y-card-padding {
+    padding: 20px;
+}
+
+.y-flex-column {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.y-flex-row {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.y-flex-row-center {
+    display: inline-flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.y-flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.y-button {
+    display: inline-block;
+    color: #666666;
+    border-style: none;
+    font-size: 12px;
+    height: auto;
+    padding: 3px 10px;
+    margin: auto;
+    margin-left: 0px;
+    margin-right: 0px;
+    outline: 0;
+}
+
+.y-button:hover {
+    color: #409eff;
+    cursor: pointer;
+}
+
+.y-button:active {
+    color: #666666;
+}
+
+.default-scrollbar::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 5px;
+    /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+}
+
+.default-scrollbar::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    background: #8d8c8c;
+}
+
+.default-scrollbar::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #ededed;
+}

@@ -1,0 +1,144 @@
+.inline-grid-1 {
+    display: inline-grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.inline-grid-2 {
+    display: inline-grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.inline-grid-3 {
+    display: inline-grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.inline-grid-4 {
+    display: inline-grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.inline-grid-5 {
+    display: inline-grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid-5 {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.inline-grid-6 {
+    display: inline-grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.inline-grid-7 {
+    display: inline-grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.inline-grid-8 {
+    display: inline-grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.inline-grid-9 {
+    display: inline-grid;
+    grid-template-columns: repeat(9, 1fr);
+}
+
+.inline-grid-10 {
+    display: inline-grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.inline-grid-11 {
+    display: inline-grid;
+    grid-template-columns: repeat(11, 1fr);
+}
+
+.inline-grid-12 {
+    display: inline-grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.span-col-12 {
+    grid-column: span 12 / auto;
+}
+
+.span-col-11 {
+    grid-column: span 11 / auto;
+}
+
+.span-col-10 {
+    grid-column: span 10 / auto;
+}
+
+.span-col-9 {
+    grid-column: span 9 / auto;
+}
+
+.span-col-8 {
+    grid-column: span 8 / auto;
+}
+
+.span-col-7 {
+    grid-column: span 7 / auto;
+}
+
+.span-col-6 {
+    grid-column: span 6 / auto;
+}
+
+.span-col-5 {
+    grid-column: span 5 / auto;
+}
+
+.span-col-4 {
+    grid-column: span 4 / auto;
+}
+
+.span-col-3 {
+    grid-column: span 3 / auto;
+}
+
+.span-col-2 {
+    grid-column: span 2 / auto;
+}
+
+.span-col-1 {
+    grid-column: span 1 / auto;
+}
+
+.grid-gap-10px {
+    grid-gap: 10px;
+}
+
+.grid-gap-5px {
+    grid-gap: 5px;
+}
+
+.grid-gap-0px {
+    grid-gap: 0px;
+}
